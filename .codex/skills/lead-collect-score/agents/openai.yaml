@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lead Collect Score"
+  short_description: "Collect local sales leads, dedupe URLs, and pre-score websites"
+  default_prompt: "Use $lead-collect-score to collect and score local sales leads from search queries."

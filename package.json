@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "check:duplicate-urls": "node scripts/check-duplicate-urls.mjs",
+    "watch:duplicate-urls": "node scripts/watch-duplicate-urls.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "playwright": "^1.59.1"
+  }
+}
