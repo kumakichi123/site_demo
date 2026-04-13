@@ -20,7 +20,12 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <p className="demo-disclaimer">
+          このページは営業用デモです。公式サイトではありません。
+        </p>
+      </body>
     </html>
   );
 }
