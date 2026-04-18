@@ -1,4 +1,5 @@
 import "./globals.css";
+import { DemoDisclaimer } from "@/components/DemoDisclaimer";
 
 export default function RootLayout({
   children,
@@ -22,9 +23,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        <p className="demo-disclaimer">
-          このページは営業用デモです。公式サイトではありません。
-        </p>
+        <DemoDisclaimer />
       </body>
     </html>
   );
