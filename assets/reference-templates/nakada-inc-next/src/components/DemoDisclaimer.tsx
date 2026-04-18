@@ -2,12 +2,20 @@
 
 import { usePathname } from "next/navigation";
 
-const hiddenPaths = new Set(["/mail-gate", "/privacy/mail-gate"]);
+function shouldHide(pathname: string | null): boolean {
+  if (!pathname) return false;
+
+  return (
+    pathname === "/mail-gate" ||
+    pathname.startsWith("/privacy/mail-gate") ||
+    pathname.startsWith("/terms/mail-gate")
+  );
+}
 
 export function DemoDisclaimer() {
   const pathname = usePathname();
 
-  if (hiddenPaths.has(pathname)) {
+  if (shouldHide(pathname)) {
     return null;
   }
 
